@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// Fonts 
+$font-dancingScript: 'Dancing Script', cursive;
+$font-josefinSans: 'Josefin Sans', sans-serif;
+$font-nunito: 'Nunito', sans-serif;
+
+// Variables
+$color-light: #f9f9f9;
+$color-black: #000;
+$color-primary: #003459;
+$color-secondary: #bbb;
+
+// Mixins
+@mixin flexLayout() {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin textStyles() {
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@mixin centerElement($topValue) {
+    position: absolute;
+    top: $topValue;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body {
+    background-color: $color-light;
+}
